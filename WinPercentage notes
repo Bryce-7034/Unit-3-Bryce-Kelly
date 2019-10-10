@@ -1,0 +1,4 @@
+At first I'll take an input of games played and games won
+then run it through a while loop to see if any errors come up and then will reset it
+in the while loop I'll use if statements in order to print a specific message for an error.
+If it passes the while loop then I'll calculate the percentage and print it.
