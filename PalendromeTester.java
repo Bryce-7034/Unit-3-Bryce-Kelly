@@ -7,12 +7,12 @@ public class PalendromeTester{
     String y = "y";
     String n ="n";
     String revInput = "";
-    System.out.println("would you like to enter a palendrome, (y/n)");
+    System.out.println("Would you like to enter a palendrome, (y/n)");
     String enter = scan.nextLine();
     if (enter.equalsIgnoreCase(y)){
       while (palendrome){
         while (enter.equalsIgnoreCase(y)){
-            System.out.println("please enter a Palendrome to be tested");
+            System.out.println("Please enter a Palendrome to be tested");
             String input = scan.nextLine();
             input = input.replaceAll("[^a-zA-Z]", "");
             revInput = "";
@@ -21,7 +21,8 @@ public class PalendromeTester{
             } if (input.equalsIgnoreCase(revInput)){
               System.out.println("This is a Palendrome");
             } else{
-              System.out.println("This is not a Palendrome, "+ revInput +" Would be.");
+              System.out.print("This is not a Palendrome, "+ revInput
+              +" Would be the reverse of "+ input);
             }
             System.out.println("Would you like to enter another palendrome, (y/n)");
             enter = scan.nextLine();
