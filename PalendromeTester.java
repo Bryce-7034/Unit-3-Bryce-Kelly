@@ -7,7 +7,7 @@ public class PalendromeTester{
     String y = "y";
     String n ="n";
     String revInput = "";
-    System.out.println("Would you like to enter a palendrome, (y/n)");
+    System.out.println("Would you like to enter a Palendrome, (y/n)");
     String enter = scan.nextLine();
     if (enter.equalsIgnoreCase(y)){
       while (palendrome){
@@ -22,9 +22,9 @@ public class PalendromeTester{
               System.out.println("This is a Palendrome");
             } else{
               System.out.print("This is not a Palendrome, "+ revInput
-              +" Would be the reverse of "+ input);
+              +" Would be the reverse of "+ input +", so not a Palendrome\n");
             }
-            System.out.println("Would you like to enter another palendrome, (y/n)");
+            System.out.println("Would you like to enter another Palendrome, (y/n)");
             enter = scan.nextLine();
           }
           if (enter.equalsIgnoreCase(n)){
@@ -40,8 +40,6 @@ public class PalendromeTester{
         System.out.println("Why did you even run me then.");
       } else{
         System.out.println("That is not n or y");
-        System.out.println("Would you like to try again? try y or n");
-        enter = scan.nextLine();
       }
   }
 }
