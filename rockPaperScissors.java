@@ -7,30 +7,39 @@ public class rockPaperScissors{
       Scanner scan = new Scanner(System.in);
       Random rand = new Random();
       System.out.println("please enter a username");
-      String name = scan.nextString();
+      String name = scan.nextLine();
       boolean constantT = true;
       boolean keepPlaying = true;
       int userChoiceInt = 0;
       double gamesWon = 0;
       double gamesPlayed = 0;
+      String y = "y";
+      String n ="n";
+      if (name.equalsIgnoreCase("69")){
+        System.out.println("nice");
+      }else if (name.equalsIgnoreCase("Richard")){
+        System.out.println("ha Dick");
+      }else if (name.equalsIgnoreCase("Michael")){
+        System.out.println("We should play heads up 7 up George.");
+      }
       while (keepPlaying){
         int comp = rand.nextInt(3)+1;
         System.out.println("please enter either rock, paper, or scissors.");
-        String userChoiceString = scan.nextString();
-        if(userChoiceString.equalsIgnoreCase(rock)){
+        String userChoiceString = scan.nextLine();
+        if(userChoiceString.equalsIgnoreCase("rock")){
           userChoiceInt = 1;
-        } else if(userChoiceString.equalsIgnoreCase(paper)){
+        } else if(userChoiceString.equalsIgnoreCase("paper")){
           userChoiceInt = 2;
-        } else if (userChoiceString.equalsIgnoreCase(scissors)){
+        } else if (userChoiceString.equalsIgnoreCase("scissors")){
           userChoiceInt = 3;
-        } else{
+        }else{
           continue;
         }
-        if (comp = userChoiceInt){
+        if (comp == userChoiceInt){
           System.out.print("computer: "+ userChoiceString +"\nhuman: "+ userChoiceString);
           System.out.println("You tied");
           gamesPlayed++;
-        }else if ((comp=3&&userChoiceInt=1)||(comp=1&&userChoiceInt=2)||(comp=2&&userChoiceInt=3)){
+        }else if ((comp==3 && userChoiceInt==1) || (comp==1 && userChoiceInt==2) || (comp==2 && userChoiceInt==3)){
           System.out.println("you Won!!");
           gamesWon++;
           gamesPlayed++;
@@ -44,11 +53,14 @@ public class rockPaperScissors{
           String contPlay = scan.nextLine();
           if (contPlay.equalsIgnoreCase(n)){
             keepPlaying = false;
+          else{
+            System.out.println("you deserve to be here.");
+          }
       }
       }
 
       //calculates win percentage and gives the output to the user
       Double winPercentage = (gamesWon/gamesPlayed)*100;
-      System.out.println("Thank you for playing!!, you won "+winPercentage+" percent of games!");
+      System.out.println("Thank you for playing "+name+"!!, you won "+winPercentage+" percent of games!");
     }
 }
