@@ -15,6 +15,7 @@ public class rockPaperScissors{
       double gamesPlayed = 0;
       String y = "y";
       String n ="n";
+      //fun things for username inputs
       if (name.equalsIgnoreCase("69")){
         System.out.println("nice");
       }else if (name.equalsIgnoreCase("Richard")){
