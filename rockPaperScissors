@@ -1,0 +1,13 @@
+start by creating a scanner and a random
+then ask for a username and scan
+generate all the variables we need to use
+then add some fun things for the username input
+start a while loop to loop everything while var1 is true
+generate a random number 1-3
+ask and scan the input of a person
+then change the user input to a number 1-3
+then start to compare the user input to computer based on number value
+print who won or lost and ask if they want to play again
+if they say yes go through the while loop and repeat
+if they say no then turn the var1 to false ending the loop
+then divide games played by games won to get win WinPercentage and print
